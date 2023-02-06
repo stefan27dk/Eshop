@@ -9,7 +9,7 @@ export default class extends AbstractView {
     // Constructor =================================================>
     constructor() {
         super(); // The abstract class Constructor "Base constructor"
-        this.setTitle("Login");
+        this.setTitle("Home");
     }
 
 
@@ -17,7 +17,7 @@ export default class extends AbstractView {
     // Get Html ====================================================>
     async getHtml() {
         return `  
-                    <p class="subTitleView"> THIS IS Login!!!</p>
+                    <p class="subTitleView"> THIS IS HOME VIEW!!!</p>
                   `;
     }
 

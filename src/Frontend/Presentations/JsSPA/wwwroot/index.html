@@ -1,10 +1,64 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshop</title>
+
+    <link rel="stylesheet" href="static/css/index.css">
+    <!--<link rel="stylesheet" href="static/css/components.css" />-->
+    <!--<link rel="stylesheet" href="static/css/scrollbar.css" />-->
+    <!--<link rel="icon" type="image/png" href="img/Messages/ok.png" />-->
+
+
+    <!--<script src="static/js/api/api_adresses.js"></script>
+    <script type="module" src="static/js/api/crud/post.js"></script>
+    <script type="module" src="static/js/api/crud/get.js"></script>
+    <script type="module" src="static/js/components/messages.js"></script>
+    <script type="module" src="static/js/validations/input_validations.js"></script>
+    <script type="module" src="static/js/resources/default_scripts.js"></script>
+    <script type="module" src="static/js/components/temp_graph.js"></script>-->
+    <script type="module" src="static/js/resources/event_listeners.js"></script>
+
 </head>
+<!--<input oninput=""/>-->
+<!--BODY------------------------------------------------------------------------------------------------------>
 <body>
-    Hello 
+    <!--onload="UpdateUserHtml();"-->
+    <div class="wrapper-1">
+
+        <!--LEFT - SideBar------------------------------------>
+        <div id="left-bar" class="left-bar">
+            <a href="/" id="dashboardLink" class="left-bar__link" onclick="" data-link><img id="dashboardImg" class="icon-img-lef-bar" src="img/SideBar/dashboard-icon.png" data-link />Dashboard</a>
+            <a href="/Register" id="searchLink" class="left-bar__link" onclick="" data-link><img id="searchImg" class="icon-img-lef-bar" src="img/SideBar/search-icon.png" data-link />Register</a>
+            <a href="/Login" id="mongographLink" class="left-bar__link" onclick="" data-link><img id="mongographImg" class="icon-img-lef-bar" src="img/SideBar/mongo-graph-icon.png" data-link /> Login</a>
+            <a href="/Posts" id="postsLink" class="left-bar__link" onclick="" data-link><img id="postsImg" class="icon-img-lef-bar" src="img/SideBar/posts-icon.png" data-link /> Posts</a>
+
+        </div>
+
+
+        <!---TOP - TopBar--------------------------------------->
+        <div class="wrapper-2">
+            <div class="top-bar">
+
+                <hr5 id="viewTitle" class="viewTitle"></hr5>
+
+                <div class="user-Html-Container" id="userHtml">
+                    <a href="/Register" class="barItem " onclick="" data-link>Register</a>
+                    <a href="/Login" class="barItem " onclick="" data-link>Log In</a>
+                </div>
+
+            </div>
+
+            <!----Center - APP - Content ------------------------>
+            <div id="app"></div>
+        </div>
+    </div>
+
+
+
+    <!--SPA - JS - Routing ------------------->
+    <script type="module" src="static/js/index.js"></script>
 </body>
-</html>
+</html>   

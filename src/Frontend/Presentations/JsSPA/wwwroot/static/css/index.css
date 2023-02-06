@@ -1,0 +1,339 @@
+﻿
+
+
+
+/*=============|| MIDDLE ||=============================================================*/
+/*Ex. when Adding padding it holds it only in the element area does not make the elelemnt bigger*/
+* {
+    box-sizing: border-box;
+}
+
+
+/*--------|| HTML - BODY ||--------------------------------------------------------------------*/
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    --scrollbarBG: rgb(70, 103, 109);
+    --thumbBG: rgba(81, 74, 85, 0.78);
+}
+
+
+
+/*-------|| HTML || ----------------------------------------------------------------------------*/
+html {
+    position: fixed;
+}
+
+
+
+
+/*--------|| BODY ||-----------------------------------------------------------------------------*/
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------|| APP - Content || ------------------------------------------*/
+#app {
+    width: 100%;
+    height: calc(100% - 50px);
+    background: rgb(22,26,54);
+    background: radial-gradient(circle, rgba(22,26,54,1) 0%, rgba(37,32,32,1) 100%);
+    overflow-y: auto;
+    display: flexbox;
+    align-items: flex-start;
+}
+
+
+
+
+a {
+    color: #009579;
+    text-decoration: none;
+}
+
+
+    a:hover {
+        color: aqua;
+    }
+
+
+
+
+/*--------|| Wrappers ||---------------------------------------------------------------------------*/
+.wrapper-1 {
+    height: 100%;
+    display: flex;
+}
+
+.wrapper-2 {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*=============|| TOP ||============================================*/
+
+.top-bar {
+    height: 60px;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background: rgb(44, 58, 57);
+    background: linear-gradient(180deg, rgba(80,80,97,1) 2%, rgba(20,44,57,1) 7%, rgba(70,70,85,1) 11%, rgba(28,31,32,1) 90%);
+    display: inline-flex;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+    .top-bar > a {
+        margin: 0 15px 0 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============|| LEFT ||============================================*/
+/*-------|| SideBar - Left || ----------------------------------------*/
+.left-bar {
+    min-width: 100px;
+    max-width: 100px;
+    /*    background: rgb(84,84,84);
+    background: linear-gradient(90deg, rgba(84,84,84,1) 0%, rgba(32,31,30,1) 1%, rgba(59,57,59,1) 89%, rgba(30,28,31,1) 94%, rgba(82,80,77,1) 95%);
+*/
+
+
+    background: rgb(93,93,93);
+    background: linear-gradient(90deg, rgba(93,93,93,1) 0%, rgba(32,33,34,1) 1%, rgba(39,43,55,1) 5%, rgba(60,47,60,1) 93%, rgba(30,28,31,1) 96%, rgba(50,55,59,1) 97%);
+    border: 1px solid rgb(75, 75, 87);
+    /*font-family:'Trajan Pro 3';*/
+    /*font-family: Courier New, Courier, monospace;*/
+    font-family: Vrinda;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+.left-bar__link {
+    display: block;
+    filter: drop-shadow(1px 1px 5px black);
+    background: rgba(92, 163, 255, 0.02);
+    color: rgb(255, 186, 112);
+    padding: 15px 3px 15px 3px;
+    margin-bottom: 7px;
+    /*  border-radius: 4px;
+    border: solid 1px rgb(72, 72, 92);*/
+
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: Arial;
+    text-align: center;
+    border: solid 1px transparent;
+    filter: drop-shadow(0px 1px 2px black);
+}
+
+
+    .left-bar__link:hover {
+        background: rgba( 0, 255, 251, 0.3);
+        filter: drop-shadow(1px 1px 5px black);
+        border: solid 1px rgb(33, 255, 192);
+        border-radius: 4px;
+    }
+
+
+
+.icon-img-lef-bar {
+    width: 30px;
+    height: auto;
+    margin: auto;
+    display: block;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+
+
+
+
+
+
+#app, .top-bar,
+.left-bar {
+    padding: 10px;
+}
+
+
+
+
+/*    .left-bar > h1,
+    .top-bar > h1 {
+        margin: 0px;
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*================== || TOPBAR - Content ||=======================================================================================*/
+.icon-img {
+    width: 30px;
+    height: auto;
+    margin-right: 7px;
+    display: inline-flex;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+
+.barItem {
+    display: inline-flex;
+    filter: drop-shadow(1px 1px 5px black);
+    text-shadow: 1px 1px black;
+}
+
+    .barItem:hover {
+        filter: drop-shadow(1px 1px 5px aqua);
+    }
+
+
+
+
+
+
+
+
+/*=============|| Titles ||============================================*/
+
+.viewTitle {
+    position: relative;
+    margin: 0 auto 0 20px;
+    display: inline-flex;
+    color: rgb(255, 174, 100);
+    text-shadow: 1px 10px 10px black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(15px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+
+
+/*.baseTitleView {
+    text-align: center;
+    font-family: Miriam;
+}
+*/
+
+/*.titleView {
+    color: rgb(255, 199, 125);
+    font-weight: 900;
+    font-size: 30px;
+    margin: 10px;
+}*/
+
+.subTitleView {
+    color: rgb(255, 244, 125);
+    font-size: 20px;
+    font-weight: 900;
+    margin: 5px 0 30px 0;
+    text-align: center;
+    font-family: Miriam;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=============|| MOBILE ||============================================*/
+
+@media screen and (max-width: 450px) {
+    .left-bar {
+        min-width: 65px;
+        max-width: 65px;
+        width: 65px;
+    }
+
+
+    .left-bar__link {
+        padding: 14px 2px 14px 2px;
+        font-size: 9px;
+        word-break: break-word;
+    }
+
+
+
+    .icon-img-lef-bar {
+    }
+
+
+    .top-bar::-webkit-scrollbar {
+        height: 3px;
+        background-color: orange;
+    }
+
+    .top-bar::-webkit-scrollbar-track {
+        height: 2px;
+    }
+    /* Optional: show position indicator in red */
+    .top-bar::-webkit-scrollbar-thumb {
+        background-color: rgb(0 239 255);
+        height: 2px;
+        border-color: transparent;
+    }
+}
