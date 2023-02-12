@@ -17,7 +17,7 @@ export let prevView = ['/', '/'];
 export const navigateTo = url => {
     history.pushState(null, null, url); // Add the url to the history API of Js   
     router();
-};
+}; 
 
 
 
