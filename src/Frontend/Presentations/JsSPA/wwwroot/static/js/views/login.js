@@ -1,30 +1,22 @@
-﻿// Imports
-// Using the abstract class
-import AbstractView from "./AbstractView.js";
-/*import { TempGraph } from "/static/js/components/temp_graph.js"*/
-
-// Class ###########################################################>
-export default class extends AbstractView {
-
-    // Constructor =================================================>
-    constructor() {
-        super(); // The abstract class Constructor "Base constructor"
-        this.setTitle("Login");
-    }
+﻿// Imports -----------------------------------------------------
+import * as Common from "./Common.js"
 
 
 
-    // Get Html ====================================================>
-    async getHtml() {
-        return `  
-                    <p class="subTitleView"> THIS IS Login!!!</p>
+// VIEW HTML ---------------------------------------------------
+export async function getHtmlAsync() {
+    return `  
+             <p class="subTitleView"> THIS IS LOGIN VIEW!!!</p>
                   `;
-    }
-
-
-    // View Script ====================================================>
-    async executeViewScript() {
-        //document.getElementById('viewTitle').innerText = 'HOME'; // Change Tittle
-        //await TempGraph();
-    }
 }
+
+
+
+
+// View Script -------------------------------------------------
+export async function executeViewScriptAsync() {
+    Common.setTitle("LOGIN");
+}
+
+
+
