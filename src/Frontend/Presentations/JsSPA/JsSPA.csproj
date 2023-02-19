@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\messages\" />
-    <Folder Include="wwwroot\img\icons\" />
+    <Folder Include="wwwroot\static\img\icons\" />
   </ItemGroup>
 
 </Project>

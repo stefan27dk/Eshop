@@ -2,6 +2,7 @@
 import * as Home from "./views/Home.js";
 import * as Login from "./views/Login.js";
 import * as Register from "./views/Register.js";
+import * as Profile from "./views/Profile.js";
 
 
 // Router  ------------------------------------------------------------------------------------------------
@@ -17,7 +18,8 @@ const router = (e) => {
 const routes = {
     '/': Home, // On Path "/" use the HomeView class and inject html in the #app div
     '/Login': Login,
-    '/Register': Register
+    '/Register': Register,
+    '/Profile': Profile
 };
 
 
