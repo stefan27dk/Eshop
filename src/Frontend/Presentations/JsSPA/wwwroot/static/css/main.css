@@ -194,7 +194,7 @@ html {
 
 
     .horizontal-bar-content img, .vertical-bar-content img {
-        max-height: 30px;
+        max-height: 35px;
     }
 
 
@@ -396,6 +396,18 @@ html {
     #top-bar a:active, #bottom-bar a:active, #left-bar a:active, #right-bar a:active {
         color: blue;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
